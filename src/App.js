@@ -1,7 +1,7 @@
 function App() {
   return (
   <div>
-    hello
+    Welcome to learning components
   </div>
   );
 }
