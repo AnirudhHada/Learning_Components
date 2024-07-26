@@ -1,0 +1,9 @@
+.first, .second {
+	height: 400px;
+	width: 400px;
+}
+
+.img {
+	min-width: 100%;
+	min-height: 100%;
+}
