@@ -1,11 +1,14 @@
+import './App.css';
 import DogTile from "./DogTile";
 
 function App() {
   return (
-  <div>
-    Welcome to learning components
+  <section className="puppy">
     <DogTile />
-  </div>
+    <DogTile />
+    <DogTile />
+    <DogTile />
+  </section>
   );
 }
 
