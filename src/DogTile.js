@@ -1,12 +1,14 @@
 import './DogTile.css';
 import DogDescription from './DogDescription';
 
-function DogTile() {
+function DogTile(props) {
+   console.log(props.children);
 	return (
 		<div className="first">
-			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoBuMvSuYezLE9rwI-zOJeIOmcIGfDPqOvFA&s" />
-			<h3>Cute Puppy</h3>
-         <DogDescription />
+			<img src={props.image} />
+			<h3 style={{fontSize: '20px', color: 'red'}}> {props.text} </h3>
+         <DogDescription description={props.description} />
+         {props.children}
 		</div>
 	);
 }
